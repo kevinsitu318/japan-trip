@@ -1,1 +1,75 @@
 /* This is a comment in CSS for reference */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-left: 150px;
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+    flex-shrink: 0;
+    margin-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+
+.header-box {
+    display: flex;
+    max-height: 400px;
+    flex: 1;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    padding: 10px;
+    margin: 0;
+}
+
+
+img {
+    height: 250px;
+    width: auto;
+    align-self: center;
+    margin-right: 700px;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: #3882F6;
+    padding: 10px 20px;
+}
+
+.header-info {
+    display: flex;
+    flex-shrink: 0;
+    width: 300px;
+    flex-flow: column wrap;
+    justify-content: center;
+}
