@@ -1,61 +1,83 @@
 /* This is a comment in CSS for reference */
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.header-box {
+    display: flex;
+    max-height: 400px;
+    flex: auto;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    padding: 10px;
 }
 
 
 .header {
     display: flex;
-    flex: 1 0 auto;
+    flex: 1;
+    height: 30px;
     justify-content: space-between;
 }
 
 .logo {
-    display: flex;
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
     margin-left: 150px;
 }
 
-.links {
-    display: flex;
-    margin-left: auto;
-    flex-shrink: 0;
-    margin-bottom: 100px;
-}
 
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #F9FAF8;
-}
-
-
-.header-box {
-    display: flex;
-    max-height: 400px;
-    flex: 1;
-    background-color: #1f2937;
-    color: #F9FAF8;
-    padding: 10px;
+    gap: 40px;
     margin: 0;
 }
 
 
-img {
-    height: 250px;
-    width: auto;
-    align-self: center;
-    margin-right: 700px;
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
 }
+
+.pic img {
+    opacity: .7;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+}
+
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+
+.desc {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 10px;
+}
+
 
 button {
     border-radius: 5px;
@@ -63,13 +85,88 @@ button {
     font-weight: bold;
     color: white;
     background-color: #3882F6;
-    padding: 10px 20px;
+    padding: 10px 40px;
 }
 
-.header-info {
+.acbut button {
+    border: 2px solid #E5E7EB;
+    margin-left: 200px;
+}
+
+.intro {
     display: flex;
-    flex-shrink: 0;
-    width: 300px;
-    flex-flow: column wrap;
     justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    margin: 50px 0 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.quotebox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: #E5E7EB;
+    height: 400px;
+    margin-top: 100px;
+    padding: 200px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoter {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px 50px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #3882F6;
+    width: 1000px;
+    min-height: 100px;
+    padding: 20px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.call {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.actext {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    background: #1f2937;
+    color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
 }
